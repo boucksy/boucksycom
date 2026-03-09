@@ -63,13 +63,19 @@ nav {
 }
 
 .nav-logo {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 500;
   letter-spacing: -0.01em;
 }
 
 .nav-logo:hover {
   opacity: 0.6;
+}
+
+.nav-links a:hover {
+  opacity: 0.6;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .nav-links {
@@ -79,14 +85,13 @@ nav {
 }
 
 .nav-links a {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   font-weight: 400;
   color: var(--color-muted);
-  transition: color 0.2s;
+  transition: color 0.2s, opacity 0.2s;
   letter-spacing: 0.01em;
 }
 
-.nav-links a:hover,
 .nav-links a.active {
   color: var(--color-text);
 }
@@ -98,7 +103,7 @@ nav {
 main {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: calc(var(--nav-height) + 5rem) 2rem 6rem;
+  padding: calc(var(--nav-height) + 2.5rem) 2rem 6rem;
 }
 
 /* ============================================
@@ -110,7 +115,7 @@ main {
 }
 
 .home-bio p {
-  font-size: clamp(1.15rem, 1.25rem, 1.35rem);
+  font-size: 1.2rem;
   line-height: 1.75rem;
   color: var(--color-text);
   margin-bottom: 1.75rem;
@@ -121,18 +126,19 @@ main {
 }
 
 .home-contact {
-  margin-top: 3.5rem;
+  margin-top: 1.75rem;
   padding-top: 2rem;
 }
 
 .home-contact p {
-  font-size: 0.9rem;
-  color: var(--color-muted);
+  font-size: 1.2rem;
+  color: var(--color-text);
 }
 
 .home-contact a {
   color: var(--color-text);
-  padding-bottom: 1px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
   transition: opacity 0.2s;
 }
 
@@ -218,7 +224,7 @@ main {
 /* Right column content */
 
 .entry-title {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 500;
   margin-bottom: 0.6rem;
   line-height: 1.3rem;
