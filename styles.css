@@ -14,9 +14,9 @@
   --color-muted: #666666;
   --color-border: #e0e0e0;
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-  --max-width: 960px;
-  --nav-height: 90px;
-  --col-left: 175px;
+  --max-width: 60rem;
+  --nav-height: 5.625rem;
+  --col-left: 11rem;
   --col-gap: 3rem;
 }
 
@@ -110,7 +110,7 @@ main {
    ============================================ */
 
 .home-bio {
-  max-width: 680px;
+  max-width: 42.5rem;
 }
 
 .home-bio p {
@@ -305,7 +305,7 @@ section > h2 {
    ============================================ */
 
 .post {
-  max-width: 680px;
+  max-width: 42.5rem;
 }
 
 .post-header {
@@ -352,7 +352,7 @@ section > h2 {
    Responsive
    ============================================ */
 
-@media (max-width: 700px) {
+@media (max-width: 43.75em) {
   main {
     padding-top: calc(var(--nav-height) + 3rem);
   }
