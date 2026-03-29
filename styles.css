@@ -352,6 +352,73 @@ section > h2 {
 }
 
 /* ============================================
+   Work page images
+   ============================================ */
+
+.work-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid rgba(36, 37, 41, 0.12);
+  margin-bottom: 2.5rem;
+  display: block;
+}
+
+.work-video-link {
+  position: relative;
+  display: block;
+}
+
+.work-video-link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: background 0.15s ease;
+}
+
+.work-video-link:hover::after {
+  background: rgba(217, 49, 8, 0.2);
+}
+
+.work-play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 64px;
+  height: 64px;
+  transition: opacity 0.2s;
+  pointer-events: none;
+  z-index: 1;
+}
+
+p.work-note {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+}
+
+p.work-note a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: opacity 0.2s;
+}
+
+p.work-note a:hover {
+  opacity: 0.6;
+}
+
+p.work-image-caption {
+  margin-top: -1.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.post-body .entry-title {
+  margin-top: 1rem;
+}
+
+/* ============================================
    Responsive
    ============================================ */
 
